@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap");
+// Custom.scss
+// Option A: Include all of Bootstrap
+$primary: #274472;
+$secondary: #5885af;
+$success: #232323;
+$info: #fff;
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.fixed-top {
+  box-shadow: 0 0.125rem 0.675rem rgb(0, 0, 0 / 5%);
+}
+.navbar .nav-item .nav-link {
+  text-align: center;
+}
+
+#logo {
+  font-size: 1.5rem;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:active {
+  color: #fff;
+}
+#home {
+  min-height: 95vh;
+  background: linear-gradient(#2744725f, rgba(23, 43, 121, 0.749)),
+    url("../images/pic-2.jpg") center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-12 p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.row .col img {
+  width: 300px;
+  height: 300px;
+}
+.image img {
+  width: 500px;
+  height: 500px;
+}
+.main h4 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.main p {
+  font-size: 1.1rem;
+  color: #c3e0e5;
+}
